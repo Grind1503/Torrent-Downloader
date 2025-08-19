@@ -1,0 +1,11 @@
+# Python version used here is 3.11.13 via conda
+# This file is used to install the required packages for the project
+requests
+beautifulsoup4
+cloudscraper
+fastmcp
+nest_asyncio
+aiohttp
+python-dotenv
+flask
+flask_cors

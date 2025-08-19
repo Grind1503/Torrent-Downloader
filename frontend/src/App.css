@@ -1,0 +1,145 @@
+/* Remove margin/padding, force dark background */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0d0d0d; /* same dark background */
+  overflow: hidden; /* removes scrollbars */
+}
+
+/* Root container */
+.app-root {
+  min-height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+/* Inner container */
+.app-container {
+  text-align: center;
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  max-height: 90vh; /* prevent growing beyond screen */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.app-title {
+  font-weight: bold !important;
+  background: linear-gradient(90deg, #646cff, #61dafb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input field */
+.app-input .MuiOutlinedInput-root fieldset {
+  border-color: #444;
+}
+.app-input .MuiOutlinedInput-root:hover fieldset {
+  border-color: #646cff;
+}
+.app-input .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #61dafb;
+}
+.app-input input {
+  color: white;
+}
+.app-input label {
+  color: #9c9c9c;
+}
+
+/* Center the search button */
+.app-button {
+  display: block !important;        /* make it a block element */
+  margin: 1.2rem auto 0 auto !important;  /* auto margins center horizontally */
+  padding: 0.6rem 2rem !important;
+  font-weight: bold !important;
+  width: 45% !important;
+  border-radius: 25px !important;
+  background: linear-gradient(90deg, #646cff, #61dafb) !important;
+}
+.app-button:hover {
+  background: linear-gradient(90deg, #747bff, #7be1ff) !important;
+}
+
+/* Results container with scroll */
+.results-container {
+  max-height: 400px;          /* Limit height before scroll */
+  overflow-y: auto;           /* Enable vertical scroll */
+  margin-top: 1rem;
+  padding-right: 0.5rem;      /* Keep text clear of scrollbar */
+}
+
+/* Dark scrollbar styling */
+.results-container::-webkit-scrollbar {
+  width: 8px;
+}
+.results-container::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-radius: 10px;
+}
+.results-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #646cff, #61dafb);
+  border-radius: 10px;
+}
+.results-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #747bff, #7be1ff);
+}
+
+/* Result card */
+.result-card {
+  margin-bottom: 1rem;
+  background-color: #1c1c1c !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Result title */
+.result-title {
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+/* Meta info */
+.result-meta {
+  color: #9c9c9c !important;
+  font-size: 0.9rem !important;
+}
+
+/* Magnet link */
+.result-magnet {
+  color: #646cff !important;
+  font-family: monospace !important;
+  font-size: 0.8rem !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Download button */
+.download-button {
+  border-radius: 20px !important;
+  text-transform: none !important;
+  font-weight: bold !important;
+  background: linear-gradient(90deg, #646cff, #61dafb) !important;
+}
+.download-button:hover {
+  background: linear-gradient(90deg, #747bff, #7be1ff) !important;
+}
+
+/* Make all text inside result cards white */
+.result-card,
+.result-card .MuiTypography-root {
+  color: white !important;
+}
