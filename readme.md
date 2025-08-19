@@ -1,4 +1,4 @@
-# Torrent Search & Downloader (with LLM-powered Query Expansion)
+# AI Torrent Search & Downloader
 
 ## 📌 Overview
 This project is a **torrent search and download automation tool** powered by:
