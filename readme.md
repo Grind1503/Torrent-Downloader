@@ -46,7 +46,7 @@ TORRENT_SEARCH/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/torrent-search.git
+git clone https://github.com/Grind1503/Torrent-Downloader.git
 cd torrent-search
 ```
 
